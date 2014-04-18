@@ -1,0 +1,1 @@
+[![Travis](http://img.shields.io/travis/joyent/node.svg)](https://travis-ci.org/rflxrk/jogoseducativos) [![Dependencies](http://img.shields.io/gemnasium/rflxrk/jogoseducativos.svg)](https://gemnasium.com/rflxrk/jogoseducativos) [![Coverage Status](http://img.shields.io/coveralls/rflxrk/jogoseducativos.svg)](https://coveralls.io/r/rflxrk/jogoseducativos)

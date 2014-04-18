@@ -1,0 +1,10 @@
+= simple_form_for resource do |f|
+  = f.error_notification
+
+<%- attributes.each do |attribute| -%>
+  = f.<%= attribute.reference? ? :association : :input %> :<%= attribute.name %>
+<%- end -%>
+
+  .form-group
+    = f.button :submit, class: 'btn-success'
+    =< link_to t('back'), collection_path, class: 'btn btn-danger'
