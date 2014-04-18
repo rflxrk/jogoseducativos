@@ -288,6 +288,7 @@ DEPENDENCIES
   rspec-rails
   sass-rails (~> 4.0.3)
   simple_form (= 3.1.0.rc1)
+  simplecov
   slim-rails
   smusher
   spring

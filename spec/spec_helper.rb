@@ -4,6 +4,15 @@ require File.expand_path("../../config/environment", __FILE__)
 require 'rspec/rails'
 require 'rspec/autorun'
 require 'coveralls'
+require 'simplecov'
+
+SimpleCov.start do
+  add_filter '/spec/'
+  add_filter '/config/'
+  add_filter '/lib/'
+  add_filter '/vendor/'
+end
+
 Coveralls.wear!
 
 # Requires supporting ruby files with custom matchers and macros, etc,
