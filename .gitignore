@@ -16,5 +16,7 @@
 /tmp
 
 # Coveralls
-.last_run.json
-.resultset.json
+coverage/
+
+# Uploads
+public/uploads
