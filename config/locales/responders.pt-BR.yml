@@ -1,0 +1,12 @@
+pt-BR:
+  flash:
+    actions:
+      create:
+        notice: '%{resource_name} cadastrado(a) com sucesso.'
+        alert: '%{resource_name} não pode ser cadastrado(a).'
+      update:
+        notice: '%{resource_name} editado(a) com sucesso.'
+        alert: '%{resource_name} não pode ser editado(a).'
+      destroy:
+        notice: '%{resource_name} excluído(a) com sucesso.'
+        alert: '%{resource_name} não pode ser excluída.'
