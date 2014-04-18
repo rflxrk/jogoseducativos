@@ -1,0 +1,18 @@
+h2= resource_class.model_name.human.pluralize
+
+.well
+  = link_to %Q{<i class="fa fa-plus"></i> #{resource_class.model_name.human}}.html_safe, new_resource_path, class: 'btn btn-success'
+
+table.table.table-hovered.table-striped
+  thead
+    tr
+      th
+
+  tbody
+    - collection.each do |resource|
+      tr
+        td= resource.name
+        td
+          .btn-group
+            = link_to t('edit'), edit_resource_path(resource), class: 'btn btn-sm btn-default'
+            = link_to t('destroy'), resource_path(resource), data: {confirm: t('are_you_sure')}, method: :delete, class: 'btn btn-sm btn-default'
