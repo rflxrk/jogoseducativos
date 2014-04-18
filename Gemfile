@@ -11,7 +11,7 @@ gem 'jquery-rails'
 gem 'spring',        group: :development
 
 gem "slim-rails"
-gem "inherited_resources"
+gem "inherited_resources", github: 'josevalim/inherited_resources'
 gem "simple_form", '3.1.0.rc1'
 gem "default_value_for"
 gem "less-rails-bootstrap"
