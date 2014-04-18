@@ -1,0 +1,9 @@
+= simple_form_for [:admin, resource] do |f|
+  = f.error_notification
+
+  = f.association :category
+  = f.input :puzzle
+
+  .form-group
+    = f.button :submit, class: 'btn-success'
+    =< link_to t('back'), collection_path, class: 'btn btn-danger'
