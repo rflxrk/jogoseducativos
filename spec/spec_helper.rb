@@ -2,6 +2,7 @@
 ENV["RAILS_ENV"] ||= 'test'
 require File.expand_path("../../config/environment", __FILE__)
 require 'rspec/rails'
+require 'capybara/rspec'
 require 'rspec/autorun'
 require 'coveralls'
 require 'simplecov'
@@ -51,5 +52,6 @@ RSpec.configure do |config|
   #     --seed 1234
   config.order = "random"
   config.render_views
+  config.include Capybara::DSL
   config.include FactoryGirl::Syntax::Methods
 end
