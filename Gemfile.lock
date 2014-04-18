@@ -56,6 +56,11 @@ GEM
       rack (>= 1.0.0)
       rack-test (>= 0.5.4)
       xpath (~> 2.0)
+    carrierwave (0.10.0)
+      activemodel (>= 3.2.0)
+      activesupport (>= 3.2.0)
+      json (>= 1.7)
+      mime-types (>= 1.16)
     code_analyzer (0.4.5)
       sexp_processor
     coderay (1.1.0)
@@ -273,6 +278,7 @@ DEPENDENCIES
   binding_of_caller
   bullet
   capybara
+  carrierwave
   coffee-rails (~> 4.0.0)
   coveralls
   default_value_for
