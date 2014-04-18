@@ -25,7 +25,6 @@ end
 group :development do
   gem "lol_dba"
   gem "i18n-tasks", require: false
-  gem "sprockets_better_errors"
   gem "hirb"
   gem "smusher"
   gem "annotate"
