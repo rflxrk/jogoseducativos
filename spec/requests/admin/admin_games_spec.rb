@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-feature "Admin::Games", type: :feature do
+feature "Admin::Games" do
   scenario 'list games' do
     game = create(:game)
 

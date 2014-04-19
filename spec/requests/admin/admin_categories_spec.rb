@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-feature "Admin::Categories", type: :feature do
+feature "Admin::Categories" do
   scenario 'list categories' do
     category = create(:category)
 
