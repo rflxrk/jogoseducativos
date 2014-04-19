@@ -17,6 +17,7 @@ gem "default_value_for"
 gem "less-rails-bootstrap"
 gem "therubyracer"
 gem "carrierwave"
+gem "kaminari"
 
 group :development, :test do
   gem "rspec-rails"
