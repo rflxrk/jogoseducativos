@@ -1,4 +1,4 @@
-class Admin::GamesController < ApplicationController
+class Admin::GamesController < Admin::AdminController
   inherit_resources
   actions :all, except: [:show]
 
