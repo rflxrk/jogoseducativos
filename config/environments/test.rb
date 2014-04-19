@@ -1,5 +1,6 @@
 Rails.application.configure do
   config.action_controller.action_on_unpermitted_parameters = :raise
+  config.action_controller.asset_host = 'http://localhost:3000/'
   # Settings specified here will take precedence over those in config/application.rb.
 
   # The test environment is used exclusively to run your application's
