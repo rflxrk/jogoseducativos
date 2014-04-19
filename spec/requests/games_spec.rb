@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-feature "Home" do
+feature "Games" do
   scenario 'list games' do
     game = create(:game)
 

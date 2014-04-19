@@ -4,5 +4,5 @@ Rails.application.routes.draw do
     resources :games, except: [:show]
   end
 
-  root to: 'home#index'
+  root to: 'games#index'
 end
