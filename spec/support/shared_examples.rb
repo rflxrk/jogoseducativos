@@ -1,20 +1,21 @@
 shared_examples 'get success' do |options|
   options = options || {}
+  params = options[:params] || {}
 
   describe '#index' do
     it 'get index successfully' do
-      get options[:action]
+      get options[:action], params
       expect(response).to be_success
     end
 
     it 'render correct template' do
-      get options[:action]
+      get options[:action], params
       expect(response).to render_template(options[:template])
     end
 
     Array(options[:assigns]).each do |var_name|
       it "assigns #{var_name} variable" do
-        get :index
+        get options[:action], params
         expect(assigns(var_name)).not_to be_nil
       end
     end if options[:assigns]
