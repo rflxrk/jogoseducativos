@@ -18,6 +18,11 @@ describe Game do
     expect(game.name).to eq("#{game.category.name} #{game.id}")
   end
 
+  it '#to_param should return correct format' do
+    game = create(:game)
+    expect(game.to_param).to eq("#{game.id}-jogar-#{game.category.name.parameterize}")
+  end
+
   describe 'invalid attributes' do
     it 'cannot have blank category' do
       expect(build(:game, category: nil)).to have(1).errors_on(:category)
