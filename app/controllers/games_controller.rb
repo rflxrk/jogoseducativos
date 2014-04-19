@@ -1,6 +1,6 @@
 class GamesController < ApplicationController
   def index
-    @games = Game.recent.page params[:page]
+    @games = Game.includes(:category).recent.page params[:page]
   end
 
   def show
