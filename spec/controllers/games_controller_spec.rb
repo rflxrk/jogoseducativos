@@ -17,4 +17,12 @@ describe GamesController do
     get :index, page: 2
     expect(assigns(:games).count).to eq(25)
   end
+
+  it '#shows successfully' do
+    game = create(:game)
+
+    get :show, id: game
+
+    expect(response).to be_success
+  end
 end
