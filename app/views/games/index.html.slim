@@ -1,3 +1,7 @@
+- content_for :seo_title, 'Jogos Educativos grátis' + (params[:page] && params[:page].to_i > 1 ? " página #{params[:page]}" : '')
+- content_for :seo_canonical, root_path
+- content_for :seo_description, 'Jogos educativos totalmente gratuitos e online para sua diversão e entretenimento' + (params[:page] && params[:page].to_i > 1 ? ", página #{params[:page]}" : '')
+
 h1 Home#index
 
 ul
