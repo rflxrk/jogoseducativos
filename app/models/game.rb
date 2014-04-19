@@ -5,4 +5,8 @@ class Game < ActiveRecord::Base
   validates_presence_of :category, :puzzle
 
   scope :recent, -> { order(created_at: :desc) }
+
+  def name
+    "#{category.name} #{id}"
+  end
 end
