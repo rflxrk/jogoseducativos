@@ -3,7 +3,7 @@ module ApplicationHelper
 
   def render_game(game)
     if game.puzzle
-      image_tag game.puzzle.url, onload: "snapfit.add(this, {mixed:true,level:4});"
+      image_tag game.puzzle.play.url, onload: "snapfit.add(this, {mixed:true,level:4});"
     end
   end
 
