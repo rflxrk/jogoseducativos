@@ -39,7 +39,7 @@ feature "Admin::Games" do
     game = create(:game)
 
     visit admin_games_path
-    click_link 'Destroy'
+    click_link I18n.t('destroy')
     expect(page).to have_content('excluído(a) com sucesso')
   end
 end

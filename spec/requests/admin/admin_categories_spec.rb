@@ -37,7 +37,7 @@ feature "Admin::Categories" do
     category = create(:category)
 
     visit admin_categories_path
-    click_link 'Destroy'
+    click_link I18n.t('destroy')
     expect(page).to have_content('excluído(a) com sucesso')
   end
 end
