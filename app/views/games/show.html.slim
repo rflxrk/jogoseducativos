@@ -11,6 +11,9 @@ p
   strong> Data:
   = l @game.created_at, format: :short
 
+.play-game.text-center
+  = render_game(@game)
+
 .text-center
   .fb-comments data-href="http://jogoseducativos.github.io#{game_path(@game)}" data-width="600" data-numposts="20" data-colorscheme="light"
 

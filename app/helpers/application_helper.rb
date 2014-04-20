@@ -1,6 +1,12 @@
 module ApplicationHelper
   include BootstrapHelper
 
+  def render_game(game)
+    if game.puzzle
+      image_tag game.puzzle.url, onload: "snapfit.add(this, {mixed:true,level:4});"
+    end
+  end
+
   def facebook_sdk
     %q{<div id="fb-root"></div>
 <script>(function(d, s, id) {
