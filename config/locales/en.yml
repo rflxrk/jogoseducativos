@@ -1,9 +1,16 @@
 ---
 en:
-  are_you_sure: Are you sure
+  are_you_sure: Are you sure?
   back: Back
   destroy: Destroy
   edit: Edit
-  edit_model: Edit model
+  edit_model: Edit %{model}
   hello: Hello world
-  new_model: New model
+  new_model: New %{model}
+  views:
+    pagination:
+      first: "&laquo; First"
+      last: "Last &raquo;"
+      previous: "&lsaquo; Prev"
+      next: "Next &rsaquo;"
+      truncate: "&hellip;"

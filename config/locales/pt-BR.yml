@@ -1,9 +1,16 @@
 ---
 pt-BR:
-  are_you_sure: Are you sure
-  back: Back
-  destroy: Destroy
-  edit: Edit
-  edit_model: Edit model
+  are_you_sure: Você tem certeza?
+  back: Voltar
+  destroy: Excluir
+  edit: Editar
+  edit_model: Editar %{model}
   hello: Hello world
-  new_model: New model
+  new_model: Novo %{model}
+  views:
+    pagination:
+      first: "&laquo; Primeira"
+      last: "Última &raquo;"
+      previous: "&lsaquo; Anterior"
+      next: "Próxima &rsaquo;"
+      truncate: "&hellip;"
