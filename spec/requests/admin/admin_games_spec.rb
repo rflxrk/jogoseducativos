@@ -18,7 +18,7 @@ feature "Admin::Games" do
 
     select category.name, from: 'Category'
     attach_file 'Puzzle', 'spec/support/image.png'
-    click_button 'Create'
+    click_button 'Criar'
     expect(page).to have_content('cadastrado(a) com sucesso')
     expect(page).to have_content(category.name)
   end
@@ -30,7 +30,7 @@ feature "Admin::Games" do
     visit admin_games_path
     click_link 'Edit'
     select new_category.name, from: 'Category'
-    click_button 'Update'
+    click_button 'Atualizar'
     expect(page).to have_content('editado(a) com sucesso')
     expect(page).to have_content(new_category.name)
   end

@@ -16,7 +16,7 @@ feature "Admin::Categories" do
     end
 
     fill_in 'Name', with: attributes_for(:category)[:name]
-    click_button 'Create'
+    click_button 'Criar'
     expect(page).to have_content('cadastrado(a) com sucesso')
     expect(page).to have_content(attributes_for(:category)[:name])
   end
@@ -28,7 +28,7 @@ feature "Admin::Categories" do
     visit admin_categories_path
     click_link 'Edit'
     fill_in 'Name', with: new_name
-    click_button 'Update'
+    click_button 'Atualizar'
     expect(page).to have_content('editado(a) com sucesso')
     expect(page).to have_content(new_name)
   end
