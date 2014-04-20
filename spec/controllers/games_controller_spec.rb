@@ -18,7 +18,7 @@ describe GamesController do
     expect(assigns(:games).count).to eq(25)
   end
 
-  it '#shows successfully' do
+  it '#show successfully' do
     game = create(:game)
 
     get :show, id: game
