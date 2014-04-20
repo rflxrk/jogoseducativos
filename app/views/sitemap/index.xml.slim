@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
+  url
+    loc= root_url
+    lastmod= @games.first.created_at.xmlschema
+    priority 1
+  - 2.upto(@games.page.total_pages).each do |page_num|
+    url
+      loc= url_for(only_path: false, controller: 'games', action: 'index', page: page_num)
+      priority 0.3
+  - @games.each do |game|
+    url
+      loc= game_url(game)
+      lastmod= game.created_at.xmlschema
+      priority 0.5

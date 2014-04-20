@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   end
 
   root to: 'games#index'
+  get 'sitemap.xml' => 'sitemap#index', format: 'xml'
 
   resources :games, path: '', only: [:show] do
     get 'pagina-:page', action: :index, on: :collection
