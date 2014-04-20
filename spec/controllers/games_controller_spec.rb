@@ -7,7 +7,7 @@ describe GamesController do
     category = create(:category)
 
     # Creating 125 records
-    125.times { create(:game, category: category) }
+    97.times { create(:game, category: category) }
 
     # First page shows 96
     get :index
@@ -15,7 +15,7 @@ describe GamesController do
 
     # Second page shows 29
     get :index, page: 2
-    expect(assigns(:games).count).to eq(29)
+    expect(assigns(:games).count).to eq(1)
   end
 
   it '#show successfully' do
