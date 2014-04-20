@@ -3,3 +3,10 @@
 - content_for :seo_canonical, game_path(@game)
 
 h2= seo_title
+
+p
+  strong> Nome:
+  = @game.name
+p
+  strong> Data:
+  = l @game.created_at, format: :short
