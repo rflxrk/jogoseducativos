@@ -6,7 +6,7 @@ class Game < ActiveRecord::Base
 
   scope :recent, -> { order(created_at: :desc) }
 
-  paginates_per 100
+  paginates_per 96
 
   def name
     "#{category.name} #{id}"
