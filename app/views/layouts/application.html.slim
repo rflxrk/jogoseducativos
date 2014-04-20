@@ -13,6 +13,9 @@ html
     .container
       h1= link_to 'Jogos Educativos', root_path
       = bootstrap_flash
+      ol.breadcrumb
+        li= link_to 'Jogos Educativos', root_path
+        = content_for(:breadcrumb)
       = yield
     footer
       p Copyright &copy; 2014 Jogos Educativos &ndash; Todos os direitos reservados

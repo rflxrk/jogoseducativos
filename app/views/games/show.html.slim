@@ -1,6 +1,8 @@
 - content_for :seo_title, "Jogos Educativos #{@game.name}"
 - content_for :seo_description, "Jogue agora mesmo o jogo educacional #{@game.name} gratuitamente. Você consegue chegar até o fim e completar o jogo educativo #{@game.name}?"
 - content_for :seo_canonical, game_path(@game)
+- content_for :breadcrumb do
+  li.active= @game.name
 
 h2= seo_title
 
