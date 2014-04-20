@@ -5,6 +5,6 @@ class GamesController < ApplicationController
 
   def show
     @game = Game.find params[:id]
-    @related_games = Game.recent.where('created_at < ?', @game.created_at).limit(6)
+    @related_games = Game.includes(:category).recent.where('created_at < ?', @game.created_at).limit(6)
   end
 end
