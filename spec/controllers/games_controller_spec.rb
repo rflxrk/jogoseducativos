@@ -9,13 +9,13 @@ describe GamesController do
     # Creating 125 records
     125.times { create(:game, category: category) }
 
-    # First page shows 100
+    # First page shows 96
     get :index
-    expect(assigns(:games).count).to eq(100)
+    expect(assigns(:games).count).to eq(96)
 
-    # Second page shows 25
+    # Second page shows 29
     get :index, page: 2
-    expect(assigns(:games).count).to eq(25)
+    expect(assigns(:games).count).to eq(29)
   end
 
   it '#show successfully' do
