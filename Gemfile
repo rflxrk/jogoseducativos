@@ -18,6 +18,7 @@ gem "less-rails-bootstrap"
 gem "therubyracer"
 gem "carrierwave"
 gem "kaminari"
+gem 'mini_magick'
 
 group :development, :test do
   gem "rspec-rails"
