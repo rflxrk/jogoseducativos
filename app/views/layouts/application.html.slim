@@ -11,6 +11,7 @@ html
     link rel="canonical" href="http://jogoseducativos.github.io#{seo_canonical}"
   body
     .container
+      h1= link_to 'Jogos Educativos', root_path
       = bootstrap_flash
       = yield
     = facebook_sdk
