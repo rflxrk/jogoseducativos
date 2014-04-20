@@ -25,4 +25,11 @@ describe GamesController do
 
     expect(response).to be_success
   end
+
+  it 'assigns @related_games' do
+    game = create(:game)
+
+    get :show, id: game
+    expect(assigns(:related_games)).to be_a(ActiveRecord::Relation)
+  end
 end
