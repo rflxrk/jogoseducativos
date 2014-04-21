@@ -12,8 +12,9 @@ html
     .container
       h1= link_to 'Jogos Educativos', root_path
       = bootstrap_flash
-      ol.breadcrumb
-        li= link_to 'Jogos Educativos', root_path
+      ol.breadcrumb(itemscope itemtype="http://data-vocabulary.org/Breadcrumb")
+        li
+          = link_to %Q{<span itemprop="title">Jogos Educativos</span>}.html_safe, root_path, 'itemprop' => 'url'
         = content_for(:breadcrumb)
       = yield
     footer
