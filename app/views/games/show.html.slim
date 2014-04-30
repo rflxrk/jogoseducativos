@@ -12,7 +12,7 @@ p
   = @game.name
 p
   strong> Data:
-  = l @game.created_at, format: :short
+  time datetime="#{@game.created_at.utc.xmlschema}"= l @game.created_at, format: :short
 
 .play-game.text-center
   = render_game(@game)
